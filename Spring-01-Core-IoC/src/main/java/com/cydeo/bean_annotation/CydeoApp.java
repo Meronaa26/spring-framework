@@ -13,10 +13,16 @@ public class CydeoApp {
         //then how do we add the beans ==> the configuration using the @Bean annotation and @steroTypeAnnotation
 
         FullTimeMentor ft= container.getBean(FullTimeMentor.class);
-       ft.createAccount();
+          ft.createAccount();
 
-      String str= container.getBean(String.class);
-        System.out.println(str);
+       String str= container.getBean(String.class);
+         System.out.println(str);
+
+        Integer xyz=container.getBean(Integer.class);
+        System.out.println(xyz);
+
+        PartTimeMentor pt = container.getBean("p1" ,PartTimeMentor.class);
+        pt.createAccount();
 
 
 

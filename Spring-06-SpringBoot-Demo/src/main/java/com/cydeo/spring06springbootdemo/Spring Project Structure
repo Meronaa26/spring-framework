@@ -1,0 +1,30 @@
+
+Spring Project Structure:
+src/main/java  : Contains application source code
+src/main/resources : contains non -java resources
+src/test/java : Contains test code
+
+mvnm and mwnw.cmd : these are maven wrapper scripts. you can use these scripts to build your project ,
+                     even if you do not have maven installed on your machine
+
+ pom.xml : this is the maven build specification
+ there is a given java class in spring boot : it is the spring boot main class that bootstrapts the project
+
+ application.properties: this file initially empty but offers a place where you can specify configuration properties
+ static :Contains any specific content(images,css,js,etc)
+ templates : Contains templates files that will be used to render content to the browser(thymeleaf)
+
+ the test class that comes with it : is a simple test class that ensures the spring application content loads successfully. you will add more
+                                     more tests to the mix as you develop the application
+
+  Build specification (POM)    :
+  <Parent>: this specifies that your project has spring-boot-starter-parent as its parent POM. This parent POM provides dependency
+            management for several libraries commonly used in Spring projects.For those libraries covered by the parent POM, you won't
+             have to specify a version, beacuse it is inhereted from the parent
+
+  All dependencies  have the work starter in their artifact ID.
+  your build file will be significantly smaller and easier to manage because you want need to declare  a dependency on every library you might need.
+
+  You are able to think of your dependencies in terms of what capabilities they provide, rather than their library names(web starter dependency)
+
+

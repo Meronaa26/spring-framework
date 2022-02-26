@@ -1,0 +1,24 @@
+
+IoC Container : Defining beans
+You are working for a Consulting Company as a Developer
+Your company just received a project from Cydeo
+Cydeo wants you to create an application that will create an account for
+their full time and part time mentors
+Client wants to switch between accounts easily in the same functionality
+
+
+IoC is a principle that we do not leave the app control the execution by its own code
+and use dependencies. Instead, we allow the framework to control the app and its
+code.
+
+Advantages :
+Decoupling the execution of a task from its implementation
+Making it easier to switch between different implementation
+Great ease in testing a program by isolating a component or mocking it
+dependencies
+
+
+
+There are multiple ways to add beans in the Spring context
+Using the @Bean annotation
+Using stereotype annotations

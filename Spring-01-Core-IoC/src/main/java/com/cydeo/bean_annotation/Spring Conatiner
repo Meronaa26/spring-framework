@@ -1,0 +1,26 @@
+
+         SPRING CONTAINER :
+IoC Container is tasked with the responsibility of connecting beans together to build a working application and it does so by reading
+   a configuration provided by developer.
+IoC container is external authority that passes a dependency to a dependent object that will use.
+Having an external responsible for injecting dependencies allows very loosely coupled applications to built.
+
+
+           SPRING BEANS :
+Spring Bean is simply Java Object.
+A bean is an object that is created and managed by Spring Container.
+Spring beans are created from POJOs.
+
+        Types of Spring container
+There are 2 types of IoC containers :
+Spring BeanFactory Container
+Spring ApplicationContext Container
+
+
+   Spring  Bean Factory Container
+It is defined by org.springframework.beans.factory.BeanFactory interface.
+Root interface for accessing spring bean container
+Some implementation classes are : (https://docs.spring.io/spring-framework/docs/current/javadoc-api/
+org/springframework/beans/factory/BeanFactory.html)
+XmlBeanFactory
+DefaultListableBeanFactory

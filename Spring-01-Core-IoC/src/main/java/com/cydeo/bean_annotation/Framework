@@ -1,0 +1,72 @@
+ What is Framework
+An application framework is a set of common software functionalities
+that provides a foundation structure for developing an application.
+
+An application framework eases the effort of writing an application by
+taking out the effort of writing all the program code from scratch.
+
+
+
+
+
+      Common App Requirements:
+Logging error, warning, and info messages happen in every app.
+Most applications use transactions to process data changes. Transactions represent
+an important mechanism that takes care of data consistency.
+Most applications use protection mechanism against the same common
+vulnerabilities.
+
+Most applications use similar ways to communicate with each other.
+Most applications use similar mechanism to improve their performance, like caching or data compression
+
+
+
+
+
+      Business Logic:
+Business logic code is what makes an application different from another
+from the functionality point of view.
+
+
+We refer to Spring as a framework, but actually, Spring is much more
+complex.
+
+Spring is an ecosystem of frameworks and not just one framework.
+
+When developers refer to the Spring framework, they refer to a part of the
+software capabilities that include : Spring Core, Spring Data Access, Spring  Model - View - Controller(MVC), Spring Testing
+
+
+
+
+     Spring Ecosystem :
+Spring ecosystem includes a big collection of other frameworks that
+integrate well one with the other and form together a larger universe.
+
+Here we have projects like Spring Data, Spring Security, Spring Cloud, Spring
+Batch, Spring Boot, and so on.
+
+When you develop an app, you can use more of these projects together.
+
+These projects are being independently developed. They have a separate
+team that works on extending its capabilities.
+
+
+
+
+     Summary:
+     A framework is a set of common functionalities that provides a foundation structure for
+     developing an application. It helps you build an app more efficiently by providing
+     functionality that you just have to assemble to your implementation instead of developing
+     yourself.
+     Spring framework opens a door to a large community. Having a large community using a
+     specific piece of software makes it also more probable that others might face a similar
+     problem with yours.
+     Spring is not just a framework. Spring framework indicates the core functionalities. In
+     general, Spring offers an entire ecosystem formed of many projects which we use in
+
+
+
+
+
+

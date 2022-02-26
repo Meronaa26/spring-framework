@@ -1,0 +1,28 @@
+     Coupling :
+Usage of an object by another object.
+It simply means that one object requires another object to complete its assigned task.
+There are two types of coupling :
+
+
+    Tight Coupling:
+A group of classes are highly dependent on one another.
+A class has a direct reference to a concrete class.
+
+
+    Loose Coupling :
+An object gets the object to be used from external sources.
+Reduces the dependencies of a class that uses the different classes directly.
+
+
+       SPRING CORE:
+Spring core is the part of the Spring framework providing the foundational mechanism used by Spring to integrate
+
+
+     IoC(Inversion of Control)
+IoC is a principle that we do not leave the app control the execution by its own code and use dependencies.
+Instead, we allow the framework to control the app and its code.
+
+     Advantages :
+Decoupling the execution of a task from its implementation
+Making it easier to switch between different implementation
+Great ease in testing a program by isolating a component or mocking it
