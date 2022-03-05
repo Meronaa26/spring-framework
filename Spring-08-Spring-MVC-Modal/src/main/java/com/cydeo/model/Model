@@ -1,0 +1,10 @@
+MODEL
+==> the model is a container for application data(java perspective it is interface)
+==> in controller any data can be added(strings,objects,from database...etc)
+==> view page can access data from model
+
+
+
+
+
+command+d ==> copying from html the line

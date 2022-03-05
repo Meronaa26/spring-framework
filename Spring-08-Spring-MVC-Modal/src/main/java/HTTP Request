@@ -1,0 +1,20 @@
+  Getting Data on the HTTP Request
+  ==> you implement the order functionality of an online shop.the client the products that user orders needs to send to the server
+  ==>you implement a web forum where you allow users to add and edit new posts. The client sends the post details to the server.
+      which stores or changes the details in a database
+  ==>you implement the login functionality of an app. the user write their credentials which need to be validated.The client sends the credentials to the server
+      and the server validates these credentials
+
+
+      1==> An HTTP request parameter : represents a simple way to send values from client to server in a key- value format.
+             they are also called query parameter
+     2==>A path variable : sending data through the request path itself
+     3==> An HTTP request header : similarly to the request parameters the request headers are sent through the HTTP header.
+     4==> The HTTP request body
+
+     @RequestParam
+     **Annotation  tells spring it needs to get the value from the HTTP request parameter with the same name as the method's parameter name
+     @PathVariable(Most used one)
+     **Annotation is used to mark the controller's action parameter to get path variable value
+
+

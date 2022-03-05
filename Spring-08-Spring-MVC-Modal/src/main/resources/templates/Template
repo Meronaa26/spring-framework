@@ -1,0 +1,7 @@
+Template Engine
+==>a template engine is a dependency that allows you to easily get and display in the view variable data that the controller sends
+==> spring supports many view templates:
+  *JSP(Java server pages)
+  *Thymleafe
+  *Groovey
+  *Jade

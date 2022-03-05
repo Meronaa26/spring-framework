@@ -8,11 +8,11 @@
         <version>2.6.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.cydeo</groupId>
-    <artifactId>Spring-08-Spring-MVC-Model</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>Spring-08-Spring-MVC-Modal</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Spring-08-Spring-MVC-Model</name>
-    <description>Spring-08-Spring-MVC-Model</description>
+    <name>Spring-08-Spring-MVC-Modal</name>
+    <description>Spring-08-Spring-MVC-Modal</description>
     <properties>
         <java.version>11</java.version>
     </properties>
