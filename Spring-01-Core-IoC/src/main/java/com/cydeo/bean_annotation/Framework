@@ -66,6 +66,10 @@ team that works on extending its capabilities.
      general, Spring offers an entire ecosystem formed of many projects which we use in
 
 
+**********   @Primary
+A primary bean is the one that Spring will choose if it has multiple options, and you do not specify a name.
+The primary bean is simply the default choice of spring
+
 
 
 

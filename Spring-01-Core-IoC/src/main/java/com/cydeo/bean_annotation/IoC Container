@@ -22,3 +22,16 @@ dependencies
 There are multiple ways to add beans in the Spring context
 Using the @Bean annotation
 Using stereotype annotations
+
+
+**********Adding new beans to the spring context
+There are multiple ways to add beans in the Spring context
+==>Using the @Bean annotation
+      Define a configuration class (annotated with @Configuration).  Add to the configuration class a method that returns the object instance
+         that you want to add to the context and annotate the method with the @Bean annotation.
+     Make Spring use the configuration class defined in the first step.
+
+
+==>Using stereotype annotations
+Using the @Component annotation, mark the classes for which you want Spring to add an instance into its context.
+Using @ComponentScan annotation over the configuration class, instruct Spring where to find the classes you marked for being managed by the framework.

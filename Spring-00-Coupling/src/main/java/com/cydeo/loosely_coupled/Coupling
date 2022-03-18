@@ -24,12 +24,50 @@ Reduces the dependencies of a class that uses the different classes directly.
 Spring core is the part of the Spring framework providing the foundational mechanism used by Spring to integrate into apps
 
 ***** IOC(INVERSION CONTROL)
-IoC is a principle that we do not leave the app control the execution by its own code
-and use dependencies. Instead, we allow the framework to control the app and its code.
+IoC is a principle that we do not leave the app control the execution by its own code and use dependencies. Instead,
+        we allow the framework to control the app and its code.
 
 Advantages :
-Decoupling the execution of a task from its implementation
+Decoupling the execution of a task from its implementation(creating loose coupling)
 Making it easier to switch between different implementation
 Great ease in testing a program by isolating a component or mocking it dependencies
+
+without IOC ==> application controls the dependencies
+with IOC ==> framework controls the application
+
+
+
+
+
+Spring Container(in my words... used to create,manage and store java objects==>beans)
+IoC Container is tasked with the responsibility of connecting beans together
+to build a working application and it does so by reading a configuration
+provided by developer.
+IoC container is external authority that passes a dependency to a dependent object that will use.
+Having an external responsible for injecting dependencies allows very loosely coupled applications to built.
+
+There are 2 types of IoC containers :
+==>Spring BeanFactory Container
+   It is defined by org.springframework.beans.factory.BeanFactory interface.
+   Root interface for accessing spring bean container
+   Some implementation classes are : (https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/BeanFactory.html)
+   XmlBeanFactory
+   DefaultListableBeanFactory
+   SimpleJndiBeanFactory
+
+
+my words==> ApplicationContext Container extends BeanFactory Container it means ApplicationContext Container have all its features and BeanFactory Container too
+
+==>Spring ApplicationContext Container
+
+
+
+******Spring Bean
+Spring Bean is simply Java Object.
+A bean is an object that is created and managed by Spring Container.
+Spring beans are created from POJOs.
+
+
+
 
 
