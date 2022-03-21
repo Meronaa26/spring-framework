@@ -1,0 +1,16 @@
+When the app creates the Spring context, Spring creates an instance of the
+class you marked as a component and adds that instance to its context.
+We still have a configuration class when we use this approach to tell Spring
+where to look for the classes annotated with stereotype annotations.
+
+Stereotype annotations can not be used for classes that you can not change.
+
+
+Summary
+
+Spring context is a bucket in which you add the instances you expect Spring to be able to manage.
+Spring can see only the instances you added to its context.
+You can add instances into context using the @Bean annotation or using stereotype annotations.
+Using the @Bean annotation to add instances to the Spring context enables you to add any kind
+of object instance as a bean and even multiple instances of the same kind to the Spring context.
+Using stereotype annotations, you can create beans only for your application classes that you  annotate with a specific annotation (like @Component)

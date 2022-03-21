@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<div align="center">
 <body>
 <form th:action="@{/mentor/confirm}"  method="post"  th:object ="${mentor}">
 
@@ -27,6 +28,7 @@
     <label>Batch Number:</label>
     <select th:field="*{batch}">
         <option th:each="theBatch : ${batchList}" th:value="${theBatch}" th:text="${theBatch}"></option>
+<!-- th:text is a display command and th:value is        -->
     </select><br>
 
     <label>Company:</label>
@@ -38,4 +40,5 @@
 </form>>
 
 </body>
+</div>
 </html>

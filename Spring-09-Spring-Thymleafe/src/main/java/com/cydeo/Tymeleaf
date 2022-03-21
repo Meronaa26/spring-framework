@@ -1,0 +1,38 @@
+Thymeleaf review:
+
+Template Engine: It is used to display data in the view that controller sends
+Thymeleaf: Provides a good support serving a HTML5 in web application.
+          to integrate Thymeleaf with spring boot, we need to add: spring-boot-starter-thymeleaf
+          convert HTML to thymeleaf, we need to add the attribute  <html xmlns:th="http://www.thymeleaf.org">
+
+ Displaying Values:
+               th:text is used to display the value of model attributes
+               ${} expression is used to refer to any of the attributes we send from controller
+
+               Absolute urls: <a th:href="@{https://cydeo}"
+               relative url: <a th:href:"@{/car/buy}"
+               Adding parameters  to link:  <a th:href ="@{/car/buy(year=2019)}
+
+               Iterations:th:each is used to achieve iteration
+               <ul>
+                  <li th:each ="car : ${cars}" th:text=${car}>Car</li>
+                  </ul>
+
+Adding CSS, JS, Images : The default directory is :src/main/resources/static
+<link th:href="@{}
+
+Fragments: reusable common parts in our pages
+         th: replace  ==> replaces the current tag with the tag defining the fragment
+
+
+
+         ******  Template Engine
+         A template engine is a dependency that allows you to easily get and  display in the view variable data that the controller sends.
+         Example of Java Template Engines: Velocity, Mustache, FreeMarker,Thymeleaf, Groovy, Jade, JSP
+         Thymeleaf is a Java-based library used to create a web application. It provides a good support serving an HTML5 in web application.
+         To able to integrate Thymeleaf with Spring Boot, we need to add the spring-boot-starter-thymeleaf dependency.
+
+         We need to add the attribute xmlns:th=“http://www.thymeleaf.org" to
+         <html> tag.
+          This definition is equivalent to an import in Java. It allows us further to
+         use the prefix “th” to refer to specific features provided by Thymeleaf in the view

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/student")
+@RequestMapping("/student")  // we don't use @GetMapping and @PostMapping in class level only in method level
 public class StudentController {
 
    // @RequestMapping("/register")
