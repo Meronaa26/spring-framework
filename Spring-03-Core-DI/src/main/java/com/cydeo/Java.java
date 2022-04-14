@@ -10,14 +10,14 @@ import org.springframework.stereotype.Component;
 public class Java {
 
     //Field injection
-//    @Autowired
+//    @Autowired  not recommended at field
 //    OfficeHours officehours ;
 
 
     //Constructor injection
-    OfficeHours officehours ;
+    OfficeHours officehours ;    // if only we have one constructor we don't need to say @Autoweird
 //    @Autowired
-//    public Java(OfficeHours officehours){
+//    public Java(OfficeHours officehours){   //uncommented because lambook does it (@AllArgconstructor)
 //        this.officehours =officehours;
 //    }
     public void getTeachingHours(){

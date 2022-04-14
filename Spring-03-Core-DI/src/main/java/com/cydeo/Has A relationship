@@ -1,0 +1,22 @@
+Implementing Relationship among beans defined in the Configuration File
+
+There are 2 ways in which we can establish the relationship among beans:
+Wiring : This is the approach where the relationship is implemented by directly calling
+           @Bean annotated method from the other @Bean annotated method that defines the second bean of the relationship.
+Autowiring : This is the approach where we let Spring provide a value for a parameter we define for the @Bean annotated method.
+
+
+
+**********Dependency Injection
+Dependency Injection is a fundamental aspect of the Spring framework, through which the Spring container "injects" objects into other objects or “dependencies”.
+DI is an application of the IoC principle. The IoC principle implied that the framework controls the application at execution.
+
+
+
+Using the @Autowired annotation, we mark an object’s property where we want Spring to
+      inject a value from the context. And we mark this intention directly in the class that defines the object which needs the dependency.
+There are 3 ways in which we can use the @Autowired annotation:
+
+Injecting the value in the field of the class
+Injecting the value through the constructor for the class
+Injecting the value through setter

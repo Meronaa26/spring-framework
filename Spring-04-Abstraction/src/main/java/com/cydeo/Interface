@@ -1,0 +1,47 @@
+Using Interface
+Interface is an abstract structure that you use to declare a specific responsibility.
+An object implementing the interface has to define this responsibility.
+More objects implementing the same interface can define the responsibility declared by that interface in different ways.
+We can say that the interface specifies the “What needs to happen”, while every object implementing the interface specifies the “How it should happen”
+
+
+Scenario:
+You are implementing an app used by a team to manage the tasks they do.
+One of the app’s features is allowing the users to leave the comments for the tasks.
+When a user publishes a comment, the comment is stored in database and the app sends an email to a specific address configured in the app.
+
+
+
+Service : refers to the objects implementing use cases.
+Repository : refers to the objects working directly with a database.
+Proxy : refers to the objects whose responsibilities are to establish communication with something outside the app.
+Model/Entity : refers to objects that model the data the app uses.
+
+
+
+Why objects should be part of the spring container?
+We need to add the object to the Spring container if it either has a dependency we need to inject from the context or if it is a dependency itself.
+
+
+We have 2 implementations, but Spring will always inject one of them ? Why having both classes at all in this case ?
+
+Apps are complex and use plenty of dependencies. It is possible that, at some point, you use dependency that provides an implementation for
+specific interface. But provided implementation is not suitable for your app, and you choose to define your custom implementation.
+
+
+@Qualifier
+If different objects need to use different implementations of the same contract, we can use @Qualifier to name these implementations and tell Spring where and what it needs to inject.
+
+
+HOW SPRING MANAGES BEANS?
+Spring has multiple different approaches for creating beans and managing their
+lifecycle. These approaches are called “scopes”
+Spring bean scopes:
+Singleton
+Prototype
+Request
+Session
+
+
+
+

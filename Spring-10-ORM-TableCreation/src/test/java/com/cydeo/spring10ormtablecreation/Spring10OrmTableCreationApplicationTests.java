@@ -1,10 +1,10 @@
-package com.cydeo.spring06springbootdemo;
+package com.cydeo.spring10ormtablecreation;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Spring06SpringBootDemoApplicationTests {
+class Spring10OrmTableCreationApplicationTests {
 
     @Test
     void contextLoads() {

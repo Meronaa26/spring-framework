@@ -6,11 +6,11 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-//@Primary
+//@Primary  we need the primary because we have two implementations for commentNotificationProxy
 @Qualifier("PUSH")
 public class CommentPushNotificationProxy implements CommentNotificationProxy{
     @Override
     public void sendComment(Comment comment) {
-        System.out.println("Sending psuh Notification : "+comment.getText());
+        System.out.println("Sending push Notification : "+comment.getText());
     }
 }
