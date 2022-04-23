@@ -22,7 +22,7 @@ public class Student {
     private String email;
 
 
-    @Transient
+    @Transient   // if we don't want to see the field  ????
     private String city;
 
 
