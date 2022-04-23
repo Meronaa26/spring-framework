@@ -25,6 +25,7 @@ public class PaymentDetail {
 
 
     @OneToOne(mappedBy = "paymentDetail")
+    @JoinColumn(name="payment_id")
     private Payment payment;
 
     public PaymentDetail(BigDecimal commissionAmount, BigDecimal merchantPayoutAmount, LocalDate payoutDate) {
