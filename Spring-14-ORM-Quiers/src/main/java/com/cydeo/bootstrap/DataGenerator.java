@@ -1,4 +1,4 @@
-package com.cydeo.bootStrap;
+package com.cydeo.bootstrap;
 
 import com.cydeo.repository.DepartmentRepository;
 import com.cydeo.repository.EmployeeRepository;
